@@ -21,6 +21,7 @@
     .search
         &__input
             width: 340px
+
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -46,7 +47,29 @@
                 width: 16px
                 height: 1px
                 background-color: $text-color
-
+    .stars
+        flex-basis: content
+    .hotel
+        &-name
+            flex-basis: 100%
+        &-wrapper
+            justify-content: space-between
+        &-info
+            &__text
+                width: 100%
+            &__name
+                margin-top: 10px
+                margin-bottom: 0
+            &__rating
+                display: none
+            &__offer
+                order: -1
+                margin-left: 0
+                
 @media (max-width: 576px)
+    .logo
+        width: 99px
+
+@media (min-width: 320px) and (max-width: 420px)
     .logo
         width: 99px
