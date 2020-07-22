@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ab8241e2-5b1d-47f7-b469-c3895ec6d87a&lang=ru_RU">
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/parallax.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -127,19 +129,19 @@
                         <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide">
-                                <img src="img/slide.jpg" alt="slide">
+                                <img class="swiper-slide__img"src="img/slide.jpg" alt="slide">
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/slide1.jpg" alt="slide">
+                                <img class="swiper-slide__img"src="img/slide1.jpg" alt="slide">
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/slide2.jpg" alt="slide">
+                                <img class="swiper-slide__img"src="img/slide2.jpg" alt="slide">
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/slider3.jpg" alt="slide">
+                                <img class="swiper-slide__img"src="img/slider3.jpg" alt="slide">
                             </div>
                             <div class="swiper-slide">
-                                <img src="img/slider4.jpg" alt="slide">
+                                <img class="swiper-slide__img"src="img/slider4.jpg" alt="slide">
                             </div>
                         </div>
                         <!-- If we need navigation buttons -->
@@ -178,9 +180,9 @@
                     </div>
                     <button class="button booking__button">View Other Options</button>
                     </div>
-                    <!-- /.booking -->
-                    <div id="map"></div>
-                    <!-- style="width: 347px; height: 213px" -->
+                    <!-- /.booking -->        
+                    <div id="map">
+                    </div>
                     <!-- /.map -->
                 </div>
             </div>
@@ -188,7 +190,59 @@
         </div>       
         <!-- /.container -->
     </section>
-    <!-- /.hotel -->
+     <!-- /.hotel -->
+    <section class="newsletter" data-parallax="scroll" data-image-src="img/newsletter.jpg">
+        <div class="newsletter-wrapper">
+            <h2 class="newsletter-title">
+                subscribe to our
+                <span class="newsletter-title__strong">Newsletter</span>
+            </h2>
+            <form action="#" class="subscribe newsletter__subscribe">
+                <input 
+                type="text" 
+                class="subscribe__input" 
+                placeholder="Your email address"
+                >
+                <button class="subscribe__button">Send</button>
+            </form>
+        </div>
+    </section>
+    <!-- /.newsletter -->
+   <section class="reviews">
+       <div class="container">
+           <h2 class="section-title">What people thinks about us</h2>
+           <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img class="swiper-slide__img"src="img/slide.jpg" alt="slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-slide__img"src="img/slide1.jpg" alt="slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-slide__img"src="img/slide2.jpg" alt="slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-slide__img"src="img/slider3.jpg" alt="slide">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="swiper-slide__img"src="img/slider4.jpg" alt="slide">
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="slider-button slider-button__prev"></div>
+                <div class="slider-button slider-button__next"></div>
+            </div>
+              <!-- /.swiper-container -->
+        </div>
+        <!-- /.slider -->
+       </div>
+       <!-- /.container -->
+   </section>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
