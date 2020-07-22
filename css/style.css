@@ -944,14 +944,15 @@ template {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    margin-top: 0;
   }
   .booking {
     width: 100%;
+    margin-right: 0;
   }
   #map {
     width: 100%;
     margin-top: 20px;
-    margin-left: -18px;
   }
 }
 
