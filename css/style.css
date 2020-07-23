@@ -1252,6 +1252,9 @@ template {
   .newsletter__subscribe {
     width: 100%;
   }
+  .hotel-slider {
+    height: 200px;
+  }
   .reviews__title {
     font-size: 18px;
     line-height: 23px;
