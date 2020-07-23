@@ -12,14 +12,14 @@
             flex-direction: row
             width: 100%
             margin-top: 20px
+        &-slider
+            width: 100%
     .booking
         width: 48%
         &__map
             width: 100%
     #map
         width: 48%
-    .slider
-        width: 100%
 
 @media (max-width: 992px)
     .container, 
@@ -42,6 +42,10 @@
     .search
         &__input
             width: 340px
+    .reviews
+        &-slider
+            &__item
+                max-width: 580px
 
 @media (max-width: 768px)
     .container
@@ -99,6 +103,21 @@
             align-items: flex-start
         &-title
            margin-bottom: 37px
+    .reviews
+        &-slider
+            &__item
+                padding: 0 30px 30px
+                max-width: 550px
+                &:after, &:before
+                    display: none
+            &__button
+                top: 45px
+                left: 50%
+                transform: translate(-50%, 0)
+                &--prev
+                    margin-left: -65px
+                &--next
+                    margin-left: 65px
 @media (max-width: 576px)
     .logo
         width: 99px
@@ -110,7 +129,9 @@
             flex-direction: column
             align-items: center
             width: 100% 
-            margin-top: 20px           
+            margin-top: 20px   
+        &-slider
+            height: 250px       
     .booking
         width: 100%
         margin-right: 0
@@ -126,6 +147,12 @@
                 font-weight: 600
                 font-size: 30px
                 line-height: 38px
+    .reviews
+        &__title
+            font-size: 22px
+        &-slider
+            &__item
+                max-width: 385px
 
 @media (min-width: 320px) and (max-width: 420px)
     .logo
@@ -133,3 +160,10 @@
     .newsletter
         &__subscribe
             width: 100%
+    .reviews
+        &__title
+            font-size: 18px
+            line-height: 23px
+        &-slider
+            &__item
+                max-width: 281px
