@@ -1480,8 +1480,8 @@ template {
   }
   .packages-wrapper {
     -ms-grid-rows: 500px 500px 500px;
-    -ms-grid-columns: 270px 270px;
-        grid-template: 500px 500px 500px / 270px 270px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 500px 500px 500px / 1fr 1fr;
     row-gap: 5px;
     -webkit-column-gap: 5px;
             column-gap: 5px;
@@ -1608,7 +1608,7 @@ template {
     height: 50%;
   }
   .packages__price--big {
-    margin-top: 40px;
+    margin-top: 24px;
   }
   .item__description {
     margin-bottom: 24px;
