@@ -1,4 +1,10 @@
 
+var menuButton = document.querySelector('.menu-button');
+menuButton.addEventListener('click', () => {
+  document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
+});
+
+
 var hotelSlider = new Swiper('.hotel-slider', {
     // Optional parameters
     loop: true,
