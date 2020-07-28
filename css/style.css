@@ -415,7 +415,7 @@ template {
   text-transform: uppercase;
 }
 
-.navbar-menu__item--mobile_visible {
+.navbar-menu__item--mobile--visible {
   display: none;
 }
 
@@ -1610,7 +1610,7 @@ template {
   body {
     padding-top: 78px;
   }
-  .navbar--mobile_fixed {
+  .navbar--mobile--fixed {
     position: fixed;
     left: 0;
     right: 0;
@@ -1629,7 +1629,7 @@ template {
   .navbar-bottom--visible {
     display: block;
   }
-  .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
   }
   .navbar-menu {
@@ -1641,7 +1641,7 @@ template {
   .navbar-menu__item {
     margin-bottom: 20px;
   }
-  .navbar-menu__item--mobile_visible {
+  .navbar-menu__item--mobile--visible {
     display: block;
   }
   .navbar__user {
@@ -1997,7 +1997,7 @@ template {
         -ms-flex-order: 2;
             order: 2;
   }
-  .navbar__search--mobile_visible {
+  .navbar__search--mobile--visible {
     width: 250px;
   }
 }
