@@ -1904,8 +1904,8 @@ template {
     margin-bottom: 3px;
   }
   .footer-wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    -ms-grid-columns: minmax(296px, 1fr);
+        grid-template-columns: minmax(296px, 1fr);
   }
   .footer__logo {
     -ms-grid-row: 1;
