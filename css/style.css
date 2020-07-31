@@ -1470,6 +1470,13 @@ template {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: opacity 0.9s;
+  transition: opacity 0.9s;
+}
+
+.modal__overlay--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__dialog {
@@ -1486,6 +1493,13 @@ template {
   z-index: 101;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: opacity 0.9s;
+  transition: opacity 0.9s;
+}
+
+.modal__dialog--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__close {
@@ -2020,6 +2034,10 @@ template {
     -ms-grid-row: 7;
     grid-row: 7;
   }
+  .modal__dialog {
+    width: 385px;
+    padding: 25px 50px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 420px) {
@@ -2070,6 +2088,10 @@ template {
   }
   .navbar__search--mobile--visible {
     width: 250px;
+  }
+  .modal__dialog {
+    width: 310px;
+    padding: 25px 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
