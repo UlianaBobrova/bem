@@ -1,5 +1,6 @@
 
-var menuButton = document.querySelector('.menu-button');
+$(document).ready(function () {
+  var menuButton = document.querySelector('.menu-button');
 menuButton.addEventListener('click', () => {
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
 });
@@ -104,3 +105,7 @@ var hotelSlider = new Swiper('.hotel-slider', {
   
 
   $('.parallax-window').parallax({imageSrc: '../img/newsletter.jpg'});
+// jquerry будет искать элементы с data-toggle-modal
+var modalButton = $('[data-toggle-modal]')
+
+});
