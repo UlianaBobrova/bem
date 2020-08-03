@@ -601,7 +601,6 @@ template {
   position: relative;
   width: 350px;
   height: 55px;
-  border-radius: 4px;
 }
 
 .subscribe__input {
@@ -611,6 +610,7 @@ template {
   border: none;
   padding-left: 33px;
   padding-right: 75px;
+  border-radius: 4px;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -620,6 +620,7 @@ template {
 .subscribe__button {
   position: absolute;
   min-width: 65px;
+  border-radius: 0 4px 4px 0;
   right: 0;
   top: 0;
   height: 100%;
