@@ -119,13 +119,10 @@ var closeModalButton = $(".modal__close");
 modalButton.on("click", openModal);
 closeModalButton.on("click", closeModal);
 
-var modalEscWindow = document.querySelector('#booking-modal');
-console.log(modalEscWindow);
-
-document.addEventListener('keydown', (event) => {
+$(document).on('keydown', (event) => {
   if (event.keyCode == 27)
   closeModal(event);
-});
+})
 
   function openModal() {
     var targetModal = $(this).attr("data-href");
@@ -140,4 +137,33 @@ document.addEventListener('keydown', (event) => {
     modalOverlay.removeClass('modal__overlay--visible');
     modalDialog.removeClass('modal__dialog--visible');
   }
+
+ 
+  // Обработка форм
+  $(".form").each(function() {
+    $(this).validate({
+    // errorClass: "invalid",
+    messages: {
+      name: {
+        required: "Укажите имя",
+        minlength: "Имя должно быть не короче 2 букв"
+      },
+      email: {
+        required: "Укажите e-mail",
+        email: "E-mail должен быть в формате name@domain.com"
+      },
+      phone: {
+        required: "Телефон обязателен"
+      },
+      text: {
+        required: "Укажите e-mail"
+      }
+    }
+  });
+})
+
+$(document).ready(function(){
+  $('.phone_us').mask('+7 (000) 000-00-00');
+});
+
 });
