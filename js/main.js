@@ -182,7 +182,7 @@ $(document).ready(function () {
   function validateForm() {
     var inputEmail = document.querySelectorAll('#email');
     var inputName = document.querySelectorAll('#name');
-    var inputMessage = document.querySelectorAll('#mess');
+    var inputMessage = document.querySelectorAll('.message');
       inputEmail.forEach((elem) => elem.addEventListener('input', (event) => {
         event.target.value = event.target.value.replace(/[^a-z\.\-\+\@\_0-9]/gi, '');
       }));

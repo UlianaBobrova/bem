@@ -1189,7 +1189,7 @@ template {
   overflow: hidden;
 }
 
-.packages__image--big {
+.packages__image-big {
   height: 500px;
   width: 366px;
   border-radius: 8px 0px 0px 8px;
@@ -1211,7 +1211,7 @@ template {
   overflow: hidden;
 }
 
-.packages__description--big {
+.packages__description-big {
   position: relative;
   width: 364px;
   height: 500px;
@@ -1231,7 +1231,7 @@ template {
   margin-top: 24px;
 }
 
-.packages__price--big {
+.packages__price-big {
   margin-top: 37px;
 }
 
@@ -1257,7 +1257,7 @@ template {
   padding-bottom: 30px;
 }
 
-.packages__item--big {
+.packages__item-big {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

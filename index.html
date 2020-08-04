@@ -9,6 +9,8 @@
     <script src="js/parallax.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Best Tour Plan - отель-букинг</title>
@@ -145,7 +147,7 @@
                         <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide hotel-slider__item">
-                                <img class="swiper-slide__img hotel-slider__item--img" src="img/slide.jpg" alt="slide">
+                                <img class="swiper-slide__img" src="img/slide.jpg" alt="slide">
                             </div>
                             <div class="swiper-slide hotel-slider__item">
                                 <img class="swiper-slide__img" src="img/slide1.jpg" alt="slide">
@@ -196,7 +198,7 @@
                     </div>
                     <!-- /.booking -->        
                     <div id="map">
-                        <iframe class="map-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414446132622!2d98.29703101527637!3d7.8382577086558065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1596550443011!5m2!1sru!2sru" width="347" height="225" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe class="map-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414446132622!2d98.29703101527637!3d7.8382577086558065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1596550443011!5m2!1sru!2sru" width="347" height="213" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                     <!-- /.map -->
                 </div>
@@ -210,9 +212,9 @@
         <div class="container">
             <h2 class="packages__title">Other Packages</h2>
             <div class="packages-wrapper">
-                <div class="item packages__item--big">
-                    <img src="img/packages1.jpg" alt="Packages item" class="packages__image packages__image--big">
-                    <div class="item-description packages__description--big">
+                <div class="item packages__item-big">
+                    <img src="img/packages1.jpg" alt="Packages item" class="packages__image packages__image-big">
+                    <div class="item-description packages__description-big">
                         <div class="item-description__rating">
                             <img src="img/Star.svg" alt="star">
                             <img src="img/Star.svg" alt="star">
@@ -237,7 +239,7 @@
                                 <img src="img/house.svg" alt="" class="packages__icon">
                                 <span class="item__condition">1 x Room</span>
                             </div>
-                            <div class="packages__price--big">
+                            <div class="packages__price-big">
                                 <span class="packages__start"><del>$ 10,500</del></span>
                                 <strong class="packages__pricetag">$ 8,500</strong>
                             </div>
@@ -629,7 +631,7 @@
                                 <input type="text" class="input footer__input phone_us" placeholder="Phone Number" name="phone" required>
                             </div>
                         </div>
-                        <textarea class="message footer__message" id="mess" placeholder="Message" name="message"></textarea>
+                        <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
                         <button class="button footer__button" type="submit">Send</button>
                         <span class="footer__info">* Required Fields</span>
                     </form>
@@ -649,11 +651,11 @@
            <div class="modal__contact-form">
             <h3 class="modal__title modal__title--mb-3">Booking</h3>
             <form action="send.php" method="POST" class="modal__form form">
-                <input type="text" class="input modal__input" id="name" placeholder="Your Full Name" name="name" required minlength="2">
+                <input type="text" class="input modal__input" placeholder="Your Full Name" name="name" required minlength="2">
                 <!-- Валидация с помощью браузера required minlength="2" -->
                 <input type="text" class="input modal__input" id="email" placeholder="Your email" name="email" required>
                 <input type="text" class="input modal__input phone_us" placeholder="Phone Number" name="phone" required>
-                <textarea class="message modal__message" id="mess" placeholder="Message" name="message"></textarea>
+                <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
                 <button class="button modal__button" type="submit">Send</button>
                 <span class="modal__info">* Required Fields</span>
             </form>
@@ -672,10 +674,10 @@
             <div class="modal__contact-form">
             <h3 class="modal__title modal__title--mb-3">Send us a feedback</h3>
             <form action="send.php" method="POST" class="modal__form form">
-             <input type="text" class="input modal__input" id="name" placeholder="Your Full Name" name="name" required>
+             <input type="text" class="input modal__input" placeholder="Your Full Name" name="name" required>
              <input type="text" class="input modal__input phone_us" placeholder="Phone Number" name="phone" required>
              <!-- <input type="hidden" class="input modal__input" placeholder="Phone Number" name="field-name" data-mask="(000) 000-0000"> -->
-             <textarea class="message modal__message" id="mess" placeholder="Message" name="message"></textarea>
+             <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
              <button class="button modal__button" type="submit">Send</button>
              <span class="modal__info">* Required Fields</span>
             </form>
