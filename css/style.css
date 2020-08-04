@@ -592,7 +592,7 @@ template {
   text-transform: uppercase;
 }
 
-#email-error {
+#text-error {
   position: absolute;
   bottom: -20px;
   color: #EC1F46;
@@ -1600,6 +1600,11 @@ template {
   }
   #map {
     width: 48%;
+    min-height: 100%;
+  }
+  .map-img {
+    width: 100%;
+    height: 100%;
   }
   .card {
     width: 230px;
@@ -1933,8 +1938,6 @@ template {
     height: 100%;
   }
   .hotel-right {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1954,6 +1957,7 @@ template {
   }
   #map {
     width: 100%;
+    min-height: 48%;
     margin-top: 20px;
   }
   .newsletter {
