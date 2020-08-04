@@ -592,7 +592,7 @@ template {
   text-transform: uppercase;
 }
 
-#text-error {
+#email-error {
   position: absolute;
   bottom: -20px;
   color: #EC1F46;
