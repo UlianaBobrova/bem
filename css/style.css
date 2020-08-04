@@ -45,6 +45,7 @@ img {
   color: #fff;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .error {
@@ -627,6 +628,7 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #fff;
+  cursor: pointer;
 }
 
 .activities {
@@ -1005,6 +1007,7 @@ template {
   color: #fff;
   background-color: #EC1F46;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .rating__text {
@@ -1616,10 +1619,6 @@ template {
   .packages__price--big {
     margin-top: 25px;
   }
-  .footer__input-group {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
 }
 
 @media (max-width: 992px) {
@@ -2117,6 +2116,10 @@ template {
   .footer__input-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .footer__input-group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .navbar__search--mobile--visible {
     width: 250px;
